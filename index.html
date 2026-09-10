@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shivansh Medical Store</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8f7;
+      color: #173b35;
+    }
+
+    header {
+      background: linear-gradient(135deg, #087f5b, #0ca678);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .store-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #087f5b;
+      color: white;
+      text-decoration: none;
+      padding: 13px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .btn:hover {
+      background: #065c43;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .info-box {
+      background: #eef8f4;
+      padding: 18px;
+      border-radius: 14px;
+    }
+
+    .info-box b {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .address {
+      margin-top: 20px;
+      font-size: 17px;
+    }
+
+    .medicines {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .medicine {
+      background: white;
+      border: 1px solid #e5ecea;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .medicine img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .medicine-content {
+      padding: 15px;
+    }
+
+    .medicine h3 {
+      margin-bottom: 7px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #123c35;
+      color: white;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 750px) {
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .info {
+        grid-template-columns: 1fr;
+      }
+
+      .medicines {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 30px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      .store-img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Shivansh Medical Store</h1>
+    <p>सभी प्रकार की दवाइयाँ उपलब्ध हैं</p>
+  </header>
+
+
+  <main class="container">
+
+    <!-- HERO SECTION -->
+    <section class="card hero">
+
+      <div>
+        <h2>आपका भरोसेमंद मेडिकल स्टोर</h2>
+
+        <p>
+          हमारे यहाँ सभी प्रकार की दवाइयाँ मिलती हैं।
+          बेहतर सेवा और सुविधाजनक खरीदारी के लिए
+          हमसे संपर्क करें।
+        </p>
+
+        <a class="btn" href="tel:9643045000">
+          📞 अभी कॉल करें
+        </a>
+      </div>
+
+      <!-- Medical Store Photo -->
+      <img
+        class="store-img"
+        src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=1000&q=80"
+        alt="Medical Store"
+      >
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="card">
+
+      <h2>हमारे बारे में</h2>
+
+      <div class="info">
+
+        <div class="info-box">
+          <b>मेडिकल स्टोर</b>
+          Shivansh Medical Store
+        </div>
+
+        <div class="info-box">
+          <b>मालिक</b>
+          Ganesh Kumar Maurya
+        </div>
+
+        <div class="info-box">
+          <b>फोन</b>
+          <a href="tel:9643045000">
+            9643045000
+          </a>
+        </div>
+
+      </div>
+
+      <p class="address">
+        <b>📍 पता:</b>
+        Semariya Chatti, Lalganj, Beriya,
+        Ballia, Uttar Pradesh
+      </p>
+
+    </section>
+
+
+    <!-- MEDICINES -->
+    <section class="card">
+
+      <h2>💊 दवाइयाँ और मेडिकल प्रोडक्ट्स</h2>
+
+      <p style="margin-top:10px;">
+        हमारे यहाँ सभी प्रकार की दवाइयाँ और
+        मेडिकल प्रोडक्ट्स उपलब्ध हैं।
+      </p>
+
+
+      <div class="medicines">
+
+        <!-- Medicine 1 -->
+        <div class="medicine">
+
+          <img
+            src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=700&q=80"
+            alt="Medicines"
+          >
+
+          <div class="medicine-content">
+            <h3>💊 दवाइयाँ</h3>
+            <p>
+              विभिन्न प्रकार की दवाइयाँ उपलब्ध।
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Medicine 2 -->
+        <div class="medicine">
+
+          <img
+            src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=700&q=80"
+            alt="Medicine Bottles"
+          >
+
+          <div class="medicine-content">
+            <h3>🧴 मेडिकल प्रोडक्ट्स</h3>
+            <p>
+              जरूरत के अनुसार मेडिकल सामान।
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Medicine 3 -->
+        <div class="medicine">
+
+          <img
+            src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=700&q=80"
+            alt="Pharmacy"
+          >
+
+          <div class="medicine-content">
+            <h3>🏥 फार्मेसी</h3>
+            <p>
+              सुविधाजनक और भरोसेमंद सेवा।
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div>
+      <strong>Shivansh Medical Store</strong>
+    </div>
+
+    <div>
+      📍 Semariya Chatti, Lalganj, Beriya, Ballia, UP
+    </div>
+
+    <div>
+      📞 9643045000
+    </div>
+
+    <div>
+      मालिक: Ganesh Kumar Maurya
+    </div>
+
+  </footer>
+
+</body>
+</html>
